@@ -6,7 +6,7 @@ st.title("Vorhersage der Weltbevölkerung")
 #%%
 from scipy.stats import linregress
 import pandas as pd
-df = pd.read_excel('Daten_Weltbevölkerung_1960-2020_NEU.xls')
+df = pd.read_excel('/Users/kathi/Desktop/projects/biz_analytics_a_new_app/Daten_Weltbevölkerung_1960-2020_New.xls')
 years = df['Jahr']
 population = df['Weltbevölkerung']
 regression_result = linregress(years, population)
